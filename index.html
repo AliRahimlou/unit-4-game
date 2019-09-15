@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Crystal Collector Game</title>
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link rel = "stylesheet" href = "assets/css/style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+
+   <div class="row">
+       <div class="col">
+            <h1>Crystal Collector</h1> 
+       </div>
+   </div>
+   <div class="row">
+       <div class="col">
+            <h1>INSTRUCTIONS</h1>
+       </div>
+   </div>
+       
+  <div class="row">
+      <div class="col-6"> 
+            <p>Try to hit the "Target Score" by clicking on the random crystals below. The "Target Score" will be different every time the game resets.</p>
+            <p>Each crystal will give you a different amount of points and will also reset every time you win or lose the game.</p>
+            
+      </div>
+      
+      <div class="col-6">
+            <button id="gem1"><img class="image" src="assets/images/gem1.png"></button>
+            <button id="gem2"><img class="image" src="assets/images/gem2.png"></button>
+            <button id="gem3"><img class="image" src="assets/images/gem3.png"></button>
+            <button id="gem4"><img class="image" src="assets/images/gem4.png"></button>
+        </div>
+       
+   
+  </div>
+
+  <div class="row">
+      <div id="magicNumber" class="col-6">the magic number:
+
+      </div>
+      <div id="yourScore" class="col-6">your score:
+
+      </div>
+  </div>
+  <div class="row">
+      <div class="col">
+          <div id= "wins"> Wins:
+        </div>
+          <br> 
+          <div id= "losses"> Losses:
+            </div>
+      </div>
+  </div>
+   
+    </div>
+
+    <script src = "assets/javascript/game.js"> </script> 
+
+    </body>
+    </html>
