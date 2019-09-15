@@ -13,7 +13,7 @@
   var losses = 0;
 
 
-  $("#magicNumber").html(targetNumber)
+  $("#magicNumber").html("The Magic Number: " + targetNumber)
 
 
 
@@ -40,12 +40,12 @@
       $.each(numberOptions,function(i, value){
         $("#gem"+(i+1)).on("click", function(){
             counter+=value;
-            $("#yourScore").html(counter)
+            $("#yourScore").html("Your score: " + counter)
 
             if (counter === targetNumber) {
                 alert("You win!");
                 wins++;
-                $("#wins").html(wins);
+                $("#wins").html("Wins " + wins);
                 reset();
 
               }
@@ -53,7 +53,7 @@
               else if (counter >= targetNumber) {
                 alert("You lose!!");
                 losses++;
-                $("#losses").html(losses);
+                $("#losses").html("Losses " + losses);
                 reset();
               }
 
@@ -65,14 +65,15 @@
       })
 
       function reset(){
+       
         gem1 = Math.floor(Math.random() * (12) + 1);
         gem2 = Math.floor(Math.random() * (12) + 1);
         gem3 = Math.floor(Math.random() * (12) + 1);
         gem4 = Math.floor(Math.random() * (12) + 1);
         counter = 0;
         targetNumber = Math.floor(Math.random() * (102) +19);
-        $("#magicNumber").html(targetNumber)
-        $("#yourScore").html(counter)
+        $("#magicNumber").html("The Magic Number: " + targetNumber)
+        $("#yourScore").html("Your score: " + counter)
       }
 
     

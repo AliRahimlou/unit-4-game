@@ -1,3 +1,32 @@
 .image {
 height: 100px;
 }
+
+#header{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: double 15pt white;
+}
+
+#magicNumber{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+    border: double 10pt black;
+}
+
+#yourScore{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+    border: double 10pt black;
+}
+
+#score{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+    border: double 10pt black;
+}
